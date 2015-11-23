@@ -32,6 +32,12 @@ $( ".homeBtn" ).on( "click", function() {
   $('#market').addClass('hide');
 });
 
+$( ".loginForm" ).on( "submit", function(event) {
+  event.preventDefault();
+  $('.profilePage').removeClass('hide');
+  $('.profileFooter').removeClass('hide');
+});
+
 var layoutView = require('./layoutView');
 
 $(function () {
